@@ -2,15 +2,20 @@ import React from 'react'
 import Footer from './Footer'
 import AddTodo from './AddTodo'
 import VisibleTodoList from './VisibleTodoList'
+import PropTypes from 'prop-types'
 
-const App = function({ match: { params } }) {
-  return (
-    <div>
-      <AddTodo />
-      <VisibleTodoList />
-      <Footer />
-    </div>
-  )
+const App = () => (
+  <div>
+    <AddTodo />
+    <VisibleTodoList />
+    <Footer />
+  </div>
+)
+
+App.propTypes = {
+  params: PropTypes.shape({
+    filter: PropTypes.string,
+  }),
 }
 
 export default App
