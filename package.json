@@ -6,21 +6,27 @@
   "main": "src/App.js",
   "dependencies": {
     "history": "4.10.1",
-    "lodash": "4.17.15",
-    "node-uuid": "1.4.8",
+    "lodash": "4.18.0",
     "prop-types": "15.7.2",
-    "react": "16.12.0",
-    "react-dom": "16.12.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-redux": "7.2.0",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "redux": "4.0.5",
     "redux-logger": "^3.0.6",
-    "redux-promise": "^0.6.0"
+    "redux-promise": "^0.6.0",
+    "uuid": "^11.1.1"
   },
   "devDependencies": {
-    "typescript": "3.8.3"
+    "typescript": "3.8.3",
+    "nth-check": "^2.0.1",
+    "webpack-dev-server": "^5.2.6",
+    "postcss": "^8.5.23",
+    "serialize-javascript": "^7.0.5",
+    "@tootallnate/once": "^2.0.1",
+    "svgo": "^2.8.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,5 +39,15 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "resolutions": {
+    "underscore": "^1.13.8",
+    "**/@svgr/plugin-svgo/**/nth-check": "^2.0.1",
+    "**/@svgr/plugin-svgo/svgo": "^2.8.4",
+    "**/resolve-url-loader/postcss": "^8.5.23",
+    "**/css-minimizer-webpack-plugin/**/serialize-javascript": "^7.0.5",
+    "**/rollup-plugin-terser/**/serialize-javascript": "^7.0.5",
+    "**/http-proxy-agent/**/@tootallnate/once": "^2.0.1",
+    "**/sockjs/**/uuid": "^11.1.1"
+  }
 }
