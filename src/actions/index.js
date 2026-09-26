@@ -1,4 +1,4 @@
-import { v4 } from 'node-uuid'
+import { v4 } from 'uuid'
 import * as api from '../api'
 
 const receiveTodos = (filter, response) => ({
